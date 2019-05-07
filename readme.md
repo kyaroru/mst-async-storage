@@ -1,16 +1,18 @@
 # mst-async-storage
 
-A [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree) extension granting your models React Native's `AsyncStorage` powers of persistance.
+A [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree) extension granting your models React Native's `react-native-keychain` powers of persistance.
 
 # Requirements
 
 - `mobx-state-tree` 2.x or 3.x
 - `react-native` >= 0.56
+- `react-native-keychain` >= 3.1.2
 
 # Installing
 
 ```sh
 yarn add mst-async-storage
+react-native link react-native-keychain
 ```
 
 # Usage
