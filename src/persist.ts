@@ -1,17 +1,17 @@
-import { AsyncStorage } from "react-native"
+import * as Keychain from 'react-native-keychain';
 
 export async function save(key: string, snapshot: {}) {
   const data = JSON.stringify(snapshot)
-  await AsyncStorage.setItem(key, data)
+  await Keychain.setGenericPassword(key, data);
 }
 
 export async function load(key: string) {
   try {
-    const raw = await AsyncStorage.getItem(key)
-    if (raw) {
-      return JSON.parse(raw)
+    const credentials = await Keychain.getGenericPassword();
+    if (credentials) {
+      return JSON.parse(credentials.password)
     }
-  } catch {}
+  } catch { }
 
   return undefined
 }

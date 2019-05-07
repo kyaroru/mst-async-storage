@@ -5723,6 +5723,10 @@ react-motion@^0.5.2:
     prop-types "^15.5.8"
     raf "^3.1.0"
 
+react-native-keychain@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-keychain/-/react-native-keychain-3.1.2.tgz#777078f411f33e1c85c946d7fb4c8b91d0790ba1"
+
 react-native@0.57.0:
   version "0.57.0"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.57.0.tgz#b0d098bbd5393fc3c079f8d7c2a8bf9a10b86b9e"
