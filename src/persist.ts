@@ -11,7 +11,10 @@ export async function load(key: string) {
     if (credentials) {
       return JSON.parse(credentials.password)
     }
-  } catch { }
+  } catch (error) {
+    console.log('[mst-async-storage');
+    console.log(error);
+  }
 
   return undefined
 }
